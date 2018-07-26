@@ -1,0 +1,28 @@
+Step 1 :
+
+Use  the below url to login to AWS Console
+
+	https://341790358550.signin.aws.amazon.com/console
+
+Step 2:
+
+Use below credentials to login to console
+
+	username: z607190
+	password: Abc123         Note: Password is given in this document just for test purpose only.
+
+Step 3:
+Use can only use EC2 instance has user is having only EC2 Access.
+
+Step 4:
+Use private key provided in the folder and User credentials to login to the server. Credentials are 
+	
+	username: z607190
+	password: Abc123
+
+	
+Optional* Step 5:
+If you want to switch to root user then the credentials are
+
+	username: root
+	password: Dizzy@10

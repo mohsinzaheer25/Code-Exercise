@@ -1,0 +1,17 @@
+- name: "Installing apache2"
+  apt: pkg=apache2 state=installed
+ 
+- name: "Removing default index.html"
+  shell: rm /var/www/html/index.html
+ 
+- name: "Copying web files"
+  copy: src=../files/{{ item }} dest=/var/www/html/ owner=root group=root mode=0755
+  with_items:
+    - env.sh
+    - index.sh
+
+- name: "Running env script"
+  shell: /bin/bash /var/www/html/env.sh >> /var/www/html/env.js
+  
+ 
+
