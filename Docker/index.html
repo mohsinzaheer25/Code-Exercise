@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the details of the current URL.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<p id="host"></p>
+<p id="ip"></p>
+<script src="env.js"></script>
+<script>
+function myFunction() {
+    var x = env.USER;
+    var y = env.HOSTNAME;
+    var z = env.IP;
+    document.getElementById("demo").innerHTML= x;
+    document.getElementById("host").innerHTML= y;
+    document.getElementById("ip").innerHTML= z;
+}
+</script>
+
+</body>
+</html>
